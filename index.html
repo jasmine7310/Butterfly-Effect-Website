@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Circus In The Sky</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/gh/lenincompres/DOM.js@latest/DOM.js"></script>
+        <script src="main.js" async defer></script>
+        <style>
+            /* CITATION: Below CSS Reset from Chat GPT */
+            /* Reset CSS using Normalize.css */
+            /* You can include Normalize.css directly or link to it from a CDN */
+            /* Below is a simplified version */
+
+            /* Box sizing border-box for all elements */
+            *, *::before, *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Remove list styles */
+            ul, ol {
+                list-style: none;
+            }
+
+            /* Remove default margin and padding on the body */
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            /* END CITATON */
+            
+            /* CITATION: CSS LINK HOVER COLOR ETC. ON STACK OVERFLOW BY VAN VU*/
+            /* CITATION LINK: https://stackoverflow.com/questions/17479912/how-to-change-link-color-when-clicked */
+            
+            /* Edited to fit own website*/
+            a:link {color:#FFFFFF;}    /* unvisited link is black */
+            a:visited {color:#FFFFFF;} /* visited link is black (reverse the color back to black) */
+            a:hover {color:#e27f9c;}   /* mouse over link (pink when mouse over) */
+            a:active {color:#e27f9c;}  /* selected link (pink in the split second which you loading the page) */
+
+            /* END CITATION */
+
+        </style>
+
+        
+        
+
+    </head>
+
+
+    <header>
+        
+        <div class="imageOverlay">
+             <div class="overlayHeader">
+                <ul id="headerLeft">
+                    <p id="headerLeftItem"><img src="/assets/circusInTheSky.png" style="width: 200px;"></p>
+                </ul>
+
+                <ul id="headerRight">
+                    <li id="headerRightItem"><a href="#bgImage"
+                                                style="text-decoration:none">Home</a></li>
+                    <li id="headerRightItem"><a href="#characterSectionTitle"
+                                                style="text-decoration:none">Characters</a></li>
+                    <li id="headerRightItem"><a href="indexWIP.html"
+                                                style="text-decoration:none">Prelude Memory</a></li>
+                    <li id="headerRightItem"><a href="indexWIP.html"
+                                                style="text-decoration:none">Development</a></li>
+                    <li id="headerRightItem"><a href="#bgImage" id="muteAudioButton">Mute Audio
+                                                                        <style>
+                                                                            #muteAudioButton{
+                                                                                text-decoration: none;  
+                                                                            }
+                                                                        </style>
+
+                                                                        <script>
+                                                                        document.addEventListener('DOMContentLoaded', function () {
+                                                                            var bgMusic = document.getElementById('bgMusic');
+
+                                                                            document.getElementById('muteAudioButton').addEventListener('click', function () {
+                                                                                if (bgMusic.paused) {
+                                                                                    bgMusic.play();
+                                                                                } else {
+                                                                                    bgMusic.pause();
+                                                                                }
+                                                                            });
+                                                                        });
+                                                                        </script>
+                                                                    </a> </li>
+                </ul>
+
+              
+            </div>
+            
+
+            <img src="/assets/bgImage121123.png" alt="Background Image" style="width: 100%;" id="bgImage">
+           
+        </div>
+
+    </header>
+
+
+    <body id = "bodyHTML">
+        
+        <audio preload="auto" id="bgMusic" autoplay loop> <source src="/music/raining-ambient-calm-piano-music-loop-111521.mp3" type="audio/mp3"></source> </audio>
+        <p id="pageIntro">Welcome Aboard.</p>
+
+        <p id="characterSectionTitle">Characters
+            <style>
+                #characterSectionTitle{
+                    margin-top: 30px;
+                }
+            </style>
+
+        </p>
+
+        <!-- <div id="character1">
+
+            <section id="charaText">
+                <img src="/assets/the_noble.png" alt="Character Title" id="theTitle" width="80%">      
+                <p id="charaDescription">A sickly noble who wanders in<br>  
+                                        the dreams of those who sleep<br>  
+                                        on a full moon. Be weary of<br>  
+                                        The Noble's maids and butlers.<br> 
+                                        They don't serve him.</p>
+                <h2 id="charaDialogue">". . . . . ."</h2>
+                <a href="indexLockettePM.html" id="preludeMemoryButton" style="text-decoration: none">PRELUDE MEMOIR</a>
+            </section>
+            
+            <img src="/assets/Lockette.png" alt="Lockette" id="charaImage" width="50%">
+
+        </div>
+
+
+
+        <div id="character1">
+
+            <img src="/assets/Spade.png" alt="Spade" id="charaImage" class="spadeImage" width="50%">
+
+            <section id="charaText">
+                <img src="/assets/the_bellboy.png" alt="Character Title" class="spadeTitleImage" id="theTitle" width="80%">      
+                <p id="charaDescription">Cruise hotel staff by day, <br>
+                                         mastermind of a money laundering<br>
+                                         cartel by night, skillfully navigating <br>
+                                         the shadows on the high skies.</p>
+                <h2 id="charaDialogue">"Would you like some dessert?"</h2>
+                <a href="indexWIP.html" id="preludeMemoryButton1" style="text-decoration: none">PRELUDE MEMOIR</a>
+            </section>
+            
+        </div>
+
+
+
+        <div id="character1">
+
+            <section id="charaText">
+                <img src="/assets/the_florist.png" alt="Character Title" id="theTitle" width="80%">      
+                <p id="charaDescription">The Florist, with a penchant <br>
+                                         for floral experimentation, blends<br>
+                                         human and plant traits in secret, <br>
+                                         creating a captivating fusion that <br>
+                                         challenges the boundaries of nature.</p>
+                <h2 id="charaDialogue">"I need to finish this experiment by Friday."</h2>
+                <a href="indexWIP.html" id="preludeMemoryButton" style="text-decoration: none">PRELUDE MEMOIR</a>
+            </section>
+            
+            <img src="/assets/Dianthus.png" alt="Dianthus" id="charaImage" width="50%">
+
+        </div> -->
+
+    </body>
+
+    
+    <!-- <footer>
+        <ul>
+            <li id="footerItem"> Theatre Moonlight
+            </li>
+
+            <li id="footerItem"> hehehehehehe
+            </li>
+        </ul>
+
+    </footer> -->
+</html>

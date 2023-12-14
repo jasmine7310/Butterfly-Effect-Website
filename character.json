@@ -1,0 +1,37 @@
+[
+    {
+        "characterName": "Lockette",
+        "characterImage": "/assets/Lockette.png",
+        "characterTitle": "/assets/the_noble.png",
+        "characterDescription": "A sickly noble who wanders in<br> the dreams of those who sleep<br> on a full moon. Be weary of<br> The Noble's maids and butlers.<br> They don't serve him.",
+        "characterDialogue" : "\". . . . . .\"",
+        "preludeButton" : "indexLockettePM.html",
+        "a_HREF" : "indexLockettePM.html"
+
+    },
+
+
+    {
+        "characterName": "Spade",
+        "characterImage": "/assets/Spade.png",
+        "altCharaTitle": "/assets/the_ringleader.png" ,
+        "characterTitle": "/assets/the_bellboy.png",
+        "altCharaImage": "/assets/SpadeType2.png",
+        "characterDescription": "Cruise hotel staff by day, <br> mastermind of a money laundering<br> cartel by night, skillfully navigating <br> the shadows on the high skies.",
+        "characterDialogue": "\"Would you like some dessert?\"",
+        "preludeButton": "indexWIP.html",
+        "a_HREF" : "indexWIP.html"
+
+    },
+
+    
+    {
+        "characterName": "Dianthus",
+        "characterImage":"/assets/Dianthus.png",
+        "characterTitle": "/assets/the_florist.png",
+        "characterDescription": "The Florist, with a penchant <br> for floral experimentation, blends<br> human and plant traits in secret, <br> creating a captivating fusion that <br> challenges the boundaries of nature.",
+        "characterDialogue": "\"I need to finish this experiment by Friday.\"",
+        "preludeButton": "indexWIP.html",
+        "a_HREF" : "indexWIP.html"
+    }
+]

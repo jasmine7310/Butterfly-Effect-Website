@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Lostar';
+    src: url(importedFonts/Lostar.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Sinoreta';
+    src: url(importedFonts/Sinoreta_PERSONAL_USE_ONLY.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Boruna';
+    src: url(importedFonts/borunademoversionregular-vmda7.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url(importedFonts/GFSDidot-Regular.ttf) format('truetype');
+}
+
+/* CITATION */
+/* https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* END CITATION */
+
+body {
+    font-family: 'Sinoreta', serif;
+    background-color: rgb(7, 7, 7);
+}
+
+#pageIntro{
+    font-family: 'Didot';
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-size: 20px;
+    display: flex;
+    color :#FFFFFF;
+    justify-content: center;
+}
+
+#characterSectionTitle{
+    font-family: 'Boruna';
+    /*font-style: italic;*/
+    padding-top: 30px;
+    font-size: 60px;
+    display: flex;
+    color :#FFFFFF;
+    justify-content: center;
+}
+
+#character1{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+
+#theTitle{
+    display: wrap;
+    flex-wrap: wrap;
+}
+
+#charaText{
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7%;
+    
+}
+
+#charaDescription{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28x;
+    display: inline-flex;
+    padding-top: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+}
+  
+#charaDialogue{
+    display: inline-flex;
+    position: relative;
+    font-family: 'Didot';
+    font-size: 24px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#preludeMemoryButton{
+    display: inline-flex;
+    font-family: 'Boruna';
+    font-size: 34px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#preludeMemoryButton1{
+    display: inline-flex;
+    font-family: 'Boruna';
+    font-size: 34px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#charaImage{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 2%;
+}
+
+header {
+    display: flex;
+    color: white;
+}
+
+.imageOverlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlayHeader {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%; 
+}
+
+#headerLeft {
+    margin-top: 1%;
+}
+
+#headerLeftItem img {
+    width: 200px;
+}
+
+#headerRight {
+    display: flex;
+}
+
+#headerRightItem {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.imageOverlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 100%;
+    bottom: 100%;
+    margin-top: 100px;
+}
+
+#footerItem{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width: 700px) {
+    #headerRightItem {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    #characterSectionTitle{
+        font-family: 'Boruna';
+        /*font-style: italic;*/
+        padding-top: 25px;
+        font-size: 60px;
+        display: flex;
+        color :#FFFFFF;
+        justify-content: center;
+    }
+
+    #character1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        color: #FFFFFF;
+        margin-bottom: 80px;
+    }
+
+    #charaImage{
+        display: flex;
+        width: 70%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-right: 2%;
+    }
+}
+
+/* create binder that takes bool for window size
+const _Moblie = inner width less than oiewhef
+ in DOM JS:
+  class: {
+    mobile: _Moblie,
+
+    ^^ only happends once
+
+    add listener for window.innerWidth
+    _MOBLIE in normal css file
+    DOM JS used to change true false of class

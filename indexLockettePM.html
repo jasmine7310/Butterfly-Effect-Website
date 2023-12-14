@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Butterfly Effect</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylePM.css">
+        <script src="mainPM.js" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            /* CITATION: Below CSS Reset from Chat GPT */
+            /* Reset CSS using Normalize.css */
+            /* You can include Normalize.css directly or link to it from a CDN */
+            /* Below is a simplified version */
+
+            /* Box sizing border-box for all elements */
+            *, *::before, *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Remove list styles */
+            ul, ol {
+                list-style: none;
+            }
+
+            /* Remove default margin and padding on the body */
+            body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            /* END CITATON */
+
+            #customCursor {
+                position: absolute;
+                pointer-events: none;
+                width: 800px; 
+                height: 1514px; 
+                background-image: url('/lockettePreludeMemory/pointerHand.png');
+                background-size: cover;
+                z-index: 3;
+            }
+            
+            #foodDome {
+                display: none;
+                width: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 2;
+            }
+
+            #foodImage {
+                display: none;
+                width: 100%;
+                z-index: 1;
+            }
+    
+        
+        </style>
+    </head>
+    <body style="background-color: rgb(0, 0, 0);">
+
+        <div id="customCursor" style="display: none;"></div>
+
+
+        <audio id="clickSound" preload="auto">
+            <source src="/music/521144__adsfoajsld__img_2189.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <audio id="bgMusic" preload="auto" src="">
+
+        </audio>
+
+        <img src="/lockettePreludeMemory/foodDome.png" id="foodDome" 
+            onmousedown="document.getElementById('customCursor').style.backgroundImage = '/lockettePreludeMemory/fistHand.png';" 
+            onmouseover="document.getElementById('customCursor').style.backgroundImage = '/lockettePreludeMemory/pointerHand.png';">
+
+        <video id="myVideo" preload="auto" width="100%" autoplay muted loop src="lockettePreludeMemory/Title Scene WEB.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <script>
+            var video = document.getElementById('myVideo');
+        
+            video.addEventListener('playing', function() {
+                video.muted = false;
+            });
+        </script>  
+
+        <style>
+            /* CITATION */
+            /* https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            body::-webkit-scrollbar {
+                display: none;
+            }
+            
+            /* Hide scrollbar for IE, Edge and Firefox */
+            body{
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+            /* END CITATION */
+        </style>
+
+        
+        <img src="/lockettePreludeMemory/goodEndFood.png" id="foodImage">
+
+        
+        
+        
+    </body>
+</html>
